@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   # USERS
   get 'signup' => 'users#new'
+  resources :users
 
   # STATIC PAGES
   root 'static_pages#home'
